@@ -1,5 +1,5 @@
 
-name: Multi Arch Image Build
+name: Image Build
 
 on:
   create:
@@ -8,6 +8,6 @@ on:
 
 jobs:
   image-build:
-    uses:  tommzn/github-ci/.github/workflows/build.image.yml@v1.0.75
+    uses:  tommzn/github-ci/.github/workflows/build.image.yml@v1.0.77
     secrets:
       cr-pat: ${{ secrets.CR_PAT }}
