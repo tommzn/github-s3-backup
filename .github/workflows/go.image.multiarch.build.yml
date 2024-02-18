@@ -1,0 +1,13 @@
+
+name: Multi Arch Image Build
+
+on:
+  create:
+    tags:
+      - 'v*'
+
+jobs:
+  go-image-build:
+    uses:  tommzn/github-ci/.github/workflows/build.image.yml@v1.0.74
+    secrets:
+      cr-pat: ${{ secrets.CR_PAT }}
